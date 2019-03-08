@@ -13,7 +13,7 @@ Common utilities that I'm usually using.
 ## F2
 
 ## Author Information
-[HsuanPhoto](https://i.imgur.com/T50aHcd.jpg)
+![HsuanPhoto](https://i.imgur.com/T50aHcd.jpg)
 
 + Name: Tsung Hsuan, Lai
 + Email: tzongshiuan@gmail.com

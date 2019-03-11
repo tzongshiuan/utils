@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@+id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.tsunghsuanparty.utils.MainFragment"
+        android:label="MainFragment" >
+        <action android:id="@+id/action_mainFragment_to_loadingDialogDemoFragment"
+                app:destination="@id/loadingDialogDemoFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/loadingDialogDemoFragment"
+              android:name="com.tsunghsuanparty.utils.ui.waiting_progress.WaitingProgressDemoFragment"
+              android:label="loading_dialog_demo_fragment" tools:layout="@layout/waiting_progress_demo_fragment"/>
+
+</navigation>

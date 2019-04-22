@@ -8,13 +8,13 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="loadingDialogDemoFragment">
+                  <entry key="demoFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="262" />
-                            <option name="y" value="12" />
+                            <option name="x" value="273" />
+                            <option name="y" value="20" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -31,7 +31,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_mainFragment_to_loadingDialogDemoFragment">
+                            <entry key="action_mainFragment_to_demoFragment">
                               <value>
                                 <LayoutPositions />
                               </value>

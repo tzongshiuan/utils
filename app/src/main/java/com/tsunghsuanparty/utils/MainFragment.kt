@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.tsunghsuanparty.utils.utils.LogMessage
 import com.tsunghsuanparty.utils.databinding.FragmentMainBinding
@@ -64,7 +63,7 @@ class MainFragment : Fragment() {
         LogMessage.D(TAG, "initUI()")
 
         mBinding.loadingDialogDemoBtn.setOnClickListener {
-            Navigation.findNavController(mBinding.root).navigate(R.id.action_mainFragment_to_loadingDialogDemoFragment)
+            Navigation.findNavController(mBinding.root).navigate(R.id.action_mainFragment_to_demoFragment)
         }
     }
 }

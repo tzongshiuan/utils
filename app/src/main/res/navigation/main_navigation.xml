@@ -8,13 +8,14 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.tsunghsuanparty.utils.MainFragment"
-        android:label="MainFragment" >
-        <action android:id="@+id/action_mainFragment_to_loadingDialogDemoFragment"
-                app:destination="@id/loadingDialogDemoFragment"/>
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action android:id="@+id/action_mainFragment_to_demoFragment" app:destination="@id/demoFragment"/>
     </fragment>
 
-    <fragment android:id="@+id/loadingDialogDemoFragment"
-              android:name="com.tsunghsuanparty.utils.ui.waiting_progress.WaitingProgressDemoFragment"
-              android:label="loading_dialog_demo_fragment" tools:layout="@layout/waiting_progress_demo_fragment"/>
+    <fragment android:id="@+id/demoFragment"
+              android:name="com.tsunghsuanparty.utils.ui.basic_framework_demo.DemoFragment"
+              android:label="DemoFragment"
+              tools:layout="@layout/demo_fragment"/>
 
 </navigation>

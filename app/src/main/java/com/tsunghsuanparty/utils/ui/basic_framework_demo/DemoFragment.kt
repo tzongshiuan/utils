@@ -6,8 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import com.jakewharton.rxbinding.widget.RxTextView
+import com.tsunghsuanparty.commonlib.util.LiveDataBus
 import com.tsunghsuanparty.utils.databinding.DemoFragmentBinding
 import com.tsunghsuanparty.utils.utils.LogMessage
+import java.util.concurrent.TimeUnit
 
 
 class DemoFragment : Fragment() {
@@ -75,5 +79,14 @@ class DemoFragment : Fragment() {
     }
 
     private fun initUI() {
+        LiveDataBus.get().with("key_test", String::class.java)
+            .observe(this, Observer {
+                mBinding.demoText.text = it
+            })
+
+        RxTextView.textChanges(mBinding.demoEdit)
+            .subscribe { charSequence ->
+                LiveDataBus.get().with("key_test").value = charSequence.toString()
+            }
     }
 }

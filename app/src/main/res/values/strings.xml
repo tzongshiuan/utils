@@ -2,6 +2,14 @@
     <string name="app_name">Utils</string>
     <string name="action_settings">Settings</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="anim_options">
+        <item>Select Animation</item>
+        <item>Translate</item>
+        <item>Rotate</item>
+        <item>Fade</item>
+        <item>Scale</item>
+        <item>Animator Set</item>
+        <item>Value Animator</item>
+    </string-array>
+
 </resources>

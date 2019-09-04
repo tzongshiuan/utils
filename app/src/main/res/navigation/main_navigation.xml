@@ -11,11 +11,23 @@
         android:label="MainFragment"
         tools:layout="@layout/fragment_main">
         <action android:id="@+id/action_mainFragment_to_demoFragment" app:destination="@id/demoFragment"/>
+        <action android:id="@+id/action_mainFragment_to_animFragment" app:destination="@id/animFragment"/>
+        <action android:id="@+id/action_mainFragment_to_boomMenuFragment" app:destination="@id/boomMenuFragment"/>
     </fragment>
 
     <fragment android:id="@+id/demoFragment"
               android:name="com.tsunghsuanparty.utils.ui.basic_framework_demo.DemoFragment"
               android:label="DemoFragment"
               tools:layout="@layout/demo_fragment"/>
+
+    <fragment android:id="@+id/animFragment"
+              android:name="com.tsunghsuanparty.utils.ui.basic_framework_demo.AnimFragment"
+              android:label="AnimFragment"
+              tools:layout="@layout/anim_fragment"/>
+
+    <fragment android:id="@+id/boomMenuFragment"
+              android:name="com.tsunghsuanparty.utils.ui.basic_framework_demo.BoomMenuFragment"
+              android:label="BoomMenuFragment"
+              tools:layout="@layout/boom_menu_fragment"/>
 
 </navigation>

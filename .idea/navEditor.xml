@@ -8,13 +8,37 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="animFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="393" />
+                            <option name="y" value="-85" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="boomMenuFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="546" />
+                            <option name="y" value="219" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="demoFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="273" />
-                            <option name="y" value="20" />
+                            <option name="x" value="195" />
+                            <option name="y" value="-299" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -31,6 +55,16 @@
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_mainFragment_to_animFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_mainFragment_to_boomMenuFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_mainFragment_to_demoFragment">
                               <value>
                                 <LayoutPositions />

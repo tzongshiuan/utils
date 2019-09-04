@@ -62,8 +62,16 @@ class MainFragment : Fragment() {
     private fun initUI() {
         LogMessage.D(TAG, "initUI()")
 
-        mBinding.loadingDialogDemoBtn.setOnClickListener {
+        mBinding.fragmentDemoBtn.setOnClickListener {
             Navigation.findNavController(mBinding.root).navigate(R.id.action_mainFragment_to_demoFragment)
+        }
+
+        mBinding.fragmentAnimBtn.setOnClickListener {
+            Navigation.findNavController(mBinding.root).navigate(R.id.action_mainFragment_to_animFragment)
+        }
+
+        mBinding.fragmentBoomMenuBtn.setOnClickListener {
+            Navigation.findNavController(mBinding.root).navigate(R.id.action_mainFragment_to_boomMenuFragment)
         }
     }
 }

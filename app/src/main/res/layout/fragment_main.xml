@@ -15,13 +15,31 @@
             tools:context=".MainFragment">
 
         <Button
-            android:id="@+id/loadingDialogDemoBtn"
+            android:id="@+id/fragmentDemoBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Basic Framework Demo"
+            android:text="Demo Fragment"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+                android:id="@+id/fragmentAnimBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anim Fragment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragmentDemoBtn"/>
+
+        <Button
+                android:id="@+id/fragmentBoomAnimBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boom Animation Fragment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragmentAnimBtn"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

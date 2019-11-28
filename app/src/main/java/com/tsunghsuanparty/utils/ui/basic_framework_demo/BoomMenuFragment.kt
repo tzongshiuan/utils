@@ -12,6 +12,7 @@ import com.tsunghsuanparty.commonlib.util.LiveDataBus
 import com.tsunghsuanparty.utils.databinding.BoomMenuFragmentBinding
 import com.tsunghsuanparty.utils.databinding.DemoFragmentBinding
 import com.tsunghsuanparty.utils.utils.LogMessage
+import kotlinx.coroutines.*
 import java.util.concurrent.TimeUnit
 
 
@@ -70,5 +71,25 @@ class BoomMenuFragment : Fragment() {
     }
 
     private fun initUI() {
+        val job: Job = GlobalScope.launch(Dispatchers.Main) {
+            val file = async(Dispatchers.IO) {
+
+            }
+
+            file.await()
+        }
+
+        val job2 = GlobalScope.async {
+            fetchDocs()
+        }
+    }
+
+    suspend fun fetchDocs() {
+        val result = getData("GGGGGGGGGGGG")
+    }
+
+    val unrelatedScope = MainScope()
+    suspend fun getData(url: String) = withContext(Dispatchers.IO) {
+
     }
 }

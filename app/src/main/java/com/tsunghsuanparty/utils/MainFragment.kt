@@ -70,7 +70,7 @@ class MainFragment : Fragment() {
             Navigation.findNavController(mBinding.root).navigate(R.id.action_mainFragment_to_animFragment)
         }
 
-        mBinding.fragmentBoomMenuBtn.setOnClickListener {
+        mBinding.fragmentBoomAnimBtn.setOnClickListener {
             Navigation.findNavController(mBinding.root).navigate(R.id.action_mainFragment_to_boomMenuFragment)
         }
     }
